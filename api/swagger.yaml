@@ -134,7 +134,7 @@ paths:
   "/pets":
     x-kusk:
       disabled: false
-      timeouts:
+      qos:
         request_timeout: 60
     get:
       operationId: getPets
@@ -194,7 +194,6 @@ x-kusk:
     expose_headers:
       - X-Custom-Header
     max_age: 86400
-  credentials: true
   upstream:
     service:
       name: petstore
