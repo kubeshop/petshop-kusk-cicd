@@ -48,5 +48,5 @@ jobs:
     
     - name: 'run kgw'
       run: |-
-        kgw api generate -i api/swagger.yaml | kubectl apply -f -
+        kgw api generate -i api/swagger.yaml --name petstore | kubectl apply -f -
      

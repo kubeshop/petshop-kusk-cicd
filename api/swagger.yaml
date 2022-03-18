@@ -200,9 +200,11 @@ x-kusk:
       name: petstore
       namespace: default
       port: 8081
+    rewrite:
+      pattern: "^/petstore"
+      substitution: ""
   path:
-    base: /petstore/api/v3
-    trim_prefix: /petstore
+    prefix: /petstore/api/v3
 servers:
   # Added by API Auto Mocking Plugin
   - description: SwaggerHub API Auto Mocking
