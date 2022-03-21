@@ -9,11 +9,13 @@ This example uses GKE for Kubernetes, Github Action for CI, and SmartBear's Pets
 You need to have a SwaggerHub org and have set up the Github sync integration to your repo.
 Our SwaggerHub org is already setup to sync to this repo.
 
+https://app.swaggerhub.com
+
 For instructions on how to set this up, check out the docs [here](https://support.smartbear.com/swaggerhub/docs/integrations/github-sync.html)
 
 ### Kubernetes
 Bring your own cluster.
-In this example, I have a pre-provisioned GKE cluster running to which I authenticate in my action.
+In this example, GKE is used which I authenticate in my action.
 
 In the cluster, you need to have Kusk Gateway installed. This example runs using the default configuration.
 
