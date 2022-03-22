@@ -90,20 +90,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Pets'
   "/pet/{petId}":
-    x-kusk:
-      cors:
-        origins:
-          - http://foo.example
-          - http://bar.example
-        methods:
-          - POST
-          - GET
-          - OPTIONS
-        headers:
-          - Content-Type
-        expose_headers:
-          - X-Custom-Header
-        max_age: 86400
     get:
       tags:
       - pet
