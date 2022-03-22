@@ -11,6 +11,20 @@ info:
     url: http://localhost/licenses
 paths:
   "/pet/{petId}":
+    x-kusk:
+      cors:
+        origins:
+          - http://foo.example
+          - http://bar.example
+        methods:
+          - POST
+          - GET
+          - OPTIONS
+        headers:
+          - Content-Type
+        expose_headers:
+          - X-Custom-Header
+        max_age: 86400
     get:
       tags:
       - pet
@@ -46,6 +60,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/Pet'
   "/pet/findByStatus":
+    x-kusk:
+      disabled: true
     get:
       tags:
       - pet
