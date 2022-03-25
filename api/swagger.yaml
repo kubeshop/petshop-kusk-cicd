@@ -60,8 +60,6 @@ paths:
               schema:
                 $ref: '#/components/schemas/Pet'
   "/pet/findByStatus":
-    x-kusk:
-      disabled: true
     get:
       tags:
       - pet
